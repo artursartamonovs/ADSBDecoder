@@ -38,8 +38,19 @@ class NetADSBHandlder: ChannelInboundHandler {
             //    print("\(message_array?.count)")
             //}
             if self.messageDelegate != nil {
-                //print("\(messageDelegate?.message_array.count)")
-                messageDelegate?.message_array.append(String(received))
+                if received.count == 17 {
+                    let trimmed = received.trimmingCharacters(in: .newlines).lowercased()
+                    messageDelegate?.message_array.append(String(trimmed))
+                    
+                } else if received.count == 31  {
+                    let trimmed = received.trimmingCharacters(in: .newlines).lowercased()
+                    messageDelegate?.message_array.append(String(trimmed))
+                } else {
+                    for line in received.components(separatedBy: .newlines) {
+                        let trimmed = line.trimmingCharacters(in: .newlines).lowercased()
+                        messageDelegate?.message_array.append(String(trimmed))
+                    }
+                }
             }
         }
     }

@@ -40,10 +40,11 @@ class FlightState: ObservableObject {
         var count = 0
         
         //let ADSBtask = ADSBFileRunner(filename: "")
-        let adsb_file = ADSBFileRunner(filename: self.default_file_path)
+        
         //let adsb_net = ADSBNetRunner(address: dump1090address, port: dump1090port)
         
         if sourceFile {
+            let adsb_file = ADSBFileRunner(filename: self.default_file_path)
             DispatchQueue.global(qos: .background).sync {
                 print("Open file")
                 adsb_file.openFile()
@@ -92,21 +93,40 @@ class FlightState: ObservableObject {
         }
         
         if sourceDump1090Server {
-            let ADSBClient = NetADSBDecoder(host: "192.168.4.201", port: 30002)
+            //let ADSBClient = NetADSBDecoder(host: "192.168.4.201", port: 30002)
+            let ADSBClient = ADSBNetRunner(address: "192.168.4.201", port: 30002)
             timer = Timer.scheduledTimer(
                 withTimeInterval: 1,
                 repeats: true
             ) { _ in
                 //print("Timer drain queue")
                 //print("\(ADSBClient.msgarray.message_array.count)")
-                if ADSBClient.msgarray.message_array.count > 0 {
+                /*if ADSBClient.msgarray.message_array.count > 0 {
                     print(ADSBClient.msgarray.message_array.count)
                     for i in 0..<ADSBClient.msgarray.message_array.count {
                         print(ADSBClient.msgarray.message_array.popLast()!,terminator: "")
                     }
+                }*/
+                if ADSBClient.adsb_tag_stream.getCount() > 0 {
+                    print("Process onse a second")
+                    for idx in 0..<ADSBClient.adsb_tag_stream.getCount() {
+                        let nextTag = ADSBClient.adsb_tag_stream.getNextTag()
+                        if nextTag == DataStreamType.ADSB_ALTITUDE {
+                            let _ = ADSBClient.adsb_tag_stream.getAltitude()
+#warning("Implement this")
+                        } else if (nextTag == DataStreamType.ADSB_ICAO) {
+                            let icao = ADSBClient.adsb_tag_stream.getIcaoName()
+                            print("Tag icao \(icao) count:\(ADSBClient.adsb_tag_stream.icaoArray.count)")
+                            self.addIcaoName(icao.address, icao.ICAOname)
+                        } else if (nextTag == DataStreamType.ADSB_LOCATION) {
+                            print("tag location")
+                            let loc = ADSBClient.adsb_tag_stream.getLocation()
+                            self.addLocation(loc.address, loc.lat, loc.long)
+                        }
+                    }
                 }
             }
-            
+            /*
             DispatchQueue.global(qos: .background).async {
                 do {
                     try ADSBClient.start()
@@ -114,6 +134,13 @@ class FlightState: ObservableObject {
                     print("Error: \(error.localizedDescription)")
                     ADSBClient.stop()
                 }
+            }*/
+            do {
+                print("Start")
+                try ADSBClient.start()
+            } catch let error {
+                print("Error: \(error.localizedDescription)")
+                ADSBClient.stop()
             }
             
         }
