@@ -11,6 +11,22 @@
 		8D8481032C64BDF2007ACD95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8481022C64BDF2007ACD95 /* ContentView.swift */; };
 		8D8481052C64BDF4007ACD95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D8481042C64BDF4007ACD95 /* Assets.xcassets */; };
 		8D8481082C64BDF4007ACD95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D8481072C64BDF4007ACD95 /* Preview Assets.xcassets */; };
+		8D8481122C64BE96007ACD95 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 8D8481112C64BE96007ACD95 /* Collections */; };
+		8D8481142C64BEE0007ACD95 /* NetADSBDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8481132C64BEE0007ACD95 /* NetADSBDecoder.swift */; };
+		8D8481172C64BF49007ACD95 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 8D8481162C64BF49007ACD95 /* NIO */; };
+		8D84811B2C64BF68007ACD95 /* FlighState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8481182C64BF68007ACD95 /* FlighState.swift */; };
+		8D84811C2C64BF68007ACD95 /* NetConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8481192C64BF68007ACD95 /* NetConfigView.swift */; };
+		8D84811D2C64BF68007ACD95 /* NetworkConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84811A2C64BF68007ACD95 /* NetworkConfigure.swift */; };
+		8D8481202C64BF95007ACD95 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 8D84811F2C64BF95007ACD95 /* ArgumentParser */; };
+		8D8481242C64BFC6007ACD95 /* ADSBNetRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8481212C64BFC6007ACD95 /* ADSBNetRunner.swift */; };
+		8D8481252C64BFC6007ACD95 /* ADSBDataQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8481222C64BFC6007ACD95 /* ADSBDataQueue.swift */; };
+		8D8481262C64BFC6007ACD95 /* ADSBFileRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8481232C64BFC6007ACD95 /* ADSBFileRunner.swift */; };
+		8D8481282C64BFDC007ACD95 /* AirplaneTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8481272C64BFDC007ACD95 /* AirplaneTracker.swift */; };
+		8D84812A2C64BFEE007ACD95 /* PositionDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8481292C64BFEE007ACD95 /* PositionDecoder.swift */; };
+		8D84812C2C64BFFF007ACD95 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84812B2C64BFFF007ACD95 /* Utils.swift */; };
+		8D84812E2C64C018007ACD95 /* ADSBRegEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84812D2C64C018007ACD95 /* ADSBRegEx.swift */; };
+		8D8481302C64C069007ACD95 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84812F2C64C069007ACD95 /* Configs.swift */; };
+		8D8481322C64C081007ACD95 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8481312C64C081007ACD95 /* Decoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +36,19 @@
 		8D8481042C64BDF4007ACD95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D8481072C64BDF4007ACD95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D8481092C64BDF4007ACD95 /* ADSBDecode_release.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ADSBDecode_release.entitlements; sourceTree = "<group>"; };
+		8D8481132C64BEE0007ACD95 /* NetADSBDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetADSBDecoder.swift; sourceTree = "<group>"; };
+		8D8481182C64BF68007ACD95 /* FlighState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlighState.swift; sourceTree = "<group>"; };
+		8D8481192C64BF68007ACD95 /* NetConfigView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetConfigView.swift; sourceTree = "<group>"; };
+		8D84811A2C64BF68007ACD95 /* NetworkConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfigure.swift; sourceTree = "<group>"; };
+		8D8481212C64BFC6007ACD95 /* ADSBNetRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADSBNetRunner.swift; sourceTree = "<group>"; };
+		8D8481222C64BFC6007ACD95 /* ADSBDataQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADSBDataQueue.swift; sourceTree = "<group>"; };
+		8D8481232C64BFC6007ACD95 /* ADSBFileRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADSBFileRunner.swift; sourceTree = "<group>"; };
+		8D8481272C64BFDC007ACD95 /* AirplaneTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirplaneTracker.swift; sourceTree = "<group>"; };
+		8D8481292C64BFEE007ACD95 /* PositionDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionDecoder.swift; sourceTree = "<group>"; };
+		8D84812B2C64BFFF007ACD95 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8D84812D2C64C018007ACD95 /* ADSBRegEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADSBRegEx.swift; sourceTree = "<group>"; };
+		8D84812F2C64C069007ACD95 /* Configs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		8D8481312C64C081007ACD95 /* Decoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D8481202C64BF95007ACD95 /* ArgumentParser in Frameworks */,
+				8D8481122C64BE96007ACD95 /* Collections in Frameworks */,
+				8D8481172C64BF49007ACD95 /* NIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +70,7 @@
 			children = (
 				8D8480FF2C64BDF2007ACD95 /* ADSBDecode_release */,
 				8D8480FE2C64BDF2007ACD95 /* Products */,
+				8D8481102C64BE96007ACD95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +85,21 @@
 		8D8480FF2C64BDF2007ACD95 /* ADSBDecode_release */ = {
 			isa = PBXGroup;
 			children = (
+				8D8481132C64BEE0007ACD95 /* NetADSBDecoder.swift */,
 				8D8481002C64BDF2007ACD95 /* ADSBDecode_releaseApp.swift */,
+				8D8481222C64BFC6007ACD95 /* ADSBDataQueue.swift */,
+				8D8481232C64BFC6007ACD95 /* ADSBFileRunner.swift */,
+				8D8481312C64C081007ACD95 /* Decoder.swift */,
+				8D84812D2C64C018007ACD95 /* ADSBRegEx.swift */,
+				8D84812B2C64BFFF007ACD95 /* Utils.swift */,
+				8D84812F2C64C069007ACD95 /* Configs.swift */,
+				8D8481292C64BFEE007ACD95 /* PositionDecoder.swift */,
+				8D8481212C64BFC6007ACD95 /* ADSBNetRunner.swift */,
+				8D8481272C64BFDC007ACD95 /* AirplaneTracker.swift */,
 				8D8481022C64BDF2007ACD95 /* ContentView.swift */,
+				8D8481182C64BF68007ACD95 /* FlighState.swift */,
+				8D8481192C64BF68007ACD95 /* NetConfigView.swift */,
+				8D84811A2C64BF68007ACD95 /* NetworkConfigure.swift */,
 				8D8481042C64BDF4007ACD95 /* Assets.xcassets */,
 				8D8481092C64BDF4007ACD95 /* ADSBDecode_release.entitlements */,
 				8D8481062C64BDF4007ACD95 /* Preview Content */,
@@ -67,6 +113,13 @@
 				8D8481072C64BDF4007ACD95 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8D8481102C64BE96007ACD95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +138,11 @@
 			dependencies = (
 			);
 			name = ADSBDecode_release;
+			packageProductDependencies = (
+				8D8481112C64BE96007ACD95 /* Collections */,
+				8D8481162C64BF49007ACD95 /* NIO */,
+				8D84811F2C64BF95007ACD95 /* ArgumentParser */,
+			);
 			productName = ADSBDecode_release;
 			productReference = 8D8480FD2C64BDF2007ACD95 /* ADSBDecode_release.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +171,11 @@
 				Base,
 			);
 			mainGroup = 8D8480F42C64BDF2007ACD95;
+			packageReferences = (
+				8D84810F2C64BE90007ACD95 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				8D8481152C64BF20007ACD95 /* XCRemoteSwiftPackageReference "swift-nio" */,
+				8D84811E2C64BF95007ACD95 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = 8D8480FE2C64BDF2007ACD95 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +202,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D8481282C64BFDC007ACD95 /* AirplaneTracker.swift in Sources */,
+				8D8481262C64BFC6007ACD95 /* ADSBFileRunner.swift in Sources */,
+				8D8481242C64BFC6007ACD95 /* ADSBNetRunner.swift in Sources */,
 				8D8481032C64BDF2007ACD95 /* ContentView.swift in Sources */,
+				8D84811D2C64BF68007ACD95 /* NetworkConfigure.swift in Sources */,
+				8D8481142C64BEE0007ACD95 /* NetADSBDecoder.swift in Sources */,
+				8D84811B2C64BF68007ACD95 /* FlighState.swift in Sources */,
+				8D84811C2C64BF68007ACD95 /* NetConfigView.swift in Sources */,
+				8D84812A2C64BFEE007ACD95 /* PositionDecoder.swift in Sources */,
 				8D8481012C64BDF2007ACD95 /* ADSBDecode_releaseApp.swift in Sources */,
+				8D84812E2C64C018007ACD95 /* ADSBRegEx.swift in Sources */,
+				8D8481252C64BFC6007ACD95 /* ADSBDataQueue.swift in Sources */,
+				8D84812C2C64BFFF007ACD95 /* Utils.swift in Sources */,
+				8D8481322C64C081007ACD95 /* Decoder.swift in Sources */,
+				8D8481302C64C069007ACD95 /* Configs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +417,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8D84810F2C64BE90007ACD95 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.2;
+			};
+		};
+		8D8481152C64BF20007ACD95 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.70.0;
+			};
+		};
+		8D84811E2C64BF95007ACD95 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D8481112C64BE96007ACD95 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D84810F2C64BE90007ACD95 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		8D8481162C64BF49007ACD95 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D8481152C64BF20007ACD95 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+		8D84811F2C64BF95007ACD95 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D84811E2C64BF95007ACD95 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8D8480F52C64BDF2007ACD95 /* Project object */;
 }
