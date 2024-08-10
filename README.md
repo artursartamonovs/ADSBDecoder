@@ -10,6 +10,7 @@ Github mirror of the project
 * Source only relase
 
 V0.0.9
+![release_0.0.9](images/release_0.0.9.png)
 * Load from file and reply ADSB messages
 * Connect to dump1090 tcp server and get data
 * Live data on map

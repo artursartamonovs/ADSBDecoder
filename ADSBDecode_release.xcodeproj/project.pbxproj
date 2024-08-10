@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D1518142C67722600B96513 /* release_0.0.9.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D1518122C67722600B96513 /* release_0.0.9.png */; };
 		8D8481012C64BDF2007ACD95 /* ADSBDecode_releaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8481002C64BDF2007ACD95 /* ADSBDecode_releaseApp.swift */; };
 		8D8481032C64BDF2007ACD95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8481022C64BDF2007ACD95 /* ContentView.swift */; };
 		8D8481052C64BDF4007ACD95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D8481042C64BDF4007ACD95 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		8D15180D2C657DB900B96513 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8D1518122C67722600B96513 /* release_0.0.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = release_0.0.9.png; sourceTree = "<group>"; };
 		8D8480FD2C64BDF2007ACD95 /* ADSBDecode_release.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADSBDecode_release.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8481002C64BDF2007ACD95 /* ADSBDecode_releaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADSBDecode_releaseApp.swift; sourceTree = "<group>"; };
 		8D8481022C64BDF2007ACD95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,9 +68,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D1518132C67722600B96513 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8D1518122C67722600B96513 /* release_0.0.9.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		8D8480F42C64BDF2007ACD95 = {
 			isa = PBXGroup;
 			children = (
+				8D1518132C67722600B96513 /* images */,
 				8D15180D2C657DB900B96513 /* README.md */,
 				8D8480FF2C64BDF2007ACD95 /* ADSBDecode_release */,
 				8D8480FE2C64BDF2007ACD95 /* Products */,
@@ -192,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D1518142C67722600B96513 /* release_0.0.9.png in Resources */,
 				8D8481082C64BDF4007ACD95 /* Preview Assets.xcassets in Resources */,
 				8D8481052C64BDF4007ACD95 /* Assets.xcassets in Resources */,
 			);
