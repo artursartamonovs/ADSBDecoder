@@ -28,6 +28,7 @@
 		8D84812E2C64C018007ACD95 /* ADSBRegEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84812D2C64C018007ACD95 /* ADSBRegEx.swift */; };
 		8D8481302C64C069007ACD95 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D84812F2C64C069007ACD95 /* Configs.swift */; };
 		8D8481322C64C081007ACD95 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8481312C64C081007ACD95 /* Decoder.swift */; };
+		8DE85E262CA2C5CF005B8D0A /* release_0.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DE85E252CA2C5CE005B8D0A /* release_0.1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		8D84812D2C64C018007ACD95 /* ADSBRegEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADSBRegEx.swift; sourceTree = "<group>"; };
 		8D84812F2C64C069007ACD95 /* Configs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 		8D8481312C64C081007ACD95 /* Decoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		8DE85E252CA2C5CE005B8D0A /* release_0.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = release_0.1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1518122C67722600B96513 /* release_0.0.9.png */,
+				8DE85E252CA2C5CE005B8D0A /* release_0.1.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -168,7 +171,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					8D8480FC2C64BDF2007ACD95 = {
 						CreatedOnToolsVersion = 15.4;
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D1518142C67722600B96513 /* release_0.0.9.png in Resources */,
+				8DE85E262CA2C5CF005B8D0A /* release_0.1.png in Resources */,
 				8D8481082C64BDF4007ACD95 /* Preview Assets.xcassets in Resources */,
 				8D8481052C64BDF4007ACD95 /* Assets.xcassets in Resources */,
 			);
@@ -271,6 +275,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -334,6 +339,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -361,22 +367,27 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ADSBDecode_release/ADSBDecode_release.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ADSBDecode_release/Preview Content\"";
 				DEVELOPMENT_TEAM = 53B26AJZ4Z;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "RadioTeam.ADSBDecode-release";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -388,22 +399,27 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ADSBDecode_release/ADSBDecode_release.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ADSBDecode_release/Preview Content\"";
 				DEVELOPMENT_TEAM = 53B26AJZ4Z;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "RadioTeam.ADSBDecode-release";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};

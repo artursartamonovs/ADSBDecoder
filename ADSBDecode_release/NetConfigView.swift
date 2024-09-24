@@ -8,21 +8,21 @@
 import SwiftUI
 
 struct NetConfigView: View {
-    @State private var server_name: String = ""
-    @State private var server_port: String = ""
-    @Environment(\.dismissWindow) private var dismissWindow
-    
     @Binding var net_config: NetworkConfigure
+    
+    @State private var server_name: String = "127.0.0.1"
+    @State private var server_port: String = "8080"
+    @Environment(\.dismissWindow) private var dismissWindow
     
     var body: some View {
         VStack {
             HStack {
-                    Text("Server")
-                    TextField("Server", text: $server_name)
+                Text("Server")
+                TextField("Server", text: $server_name)
             }
             HStack {
-                    Text("Port")
-                    TextField("Port", text: $server_port)
+                Text("Port")
+                TextField("Port", text: $server_port)
             }
             HStack {
                     Button(action:{

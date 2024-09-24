@@ -11,6 +11,11 @@ Github mirror of the project
 * Please Issue tracker only for issues
 
 
+V0.1
+Docs [ADSBDecoder doc](docs/ADSBDecoder_0.1.pdf)
+![release_0.1](images/release_0.1.png)
+* Fixed drawing of airplanes, now they updated when new data comes in
+* Cleaned up unused buttons and not fully implemented menus
 
 V0.0.9
 Docs [ADSBDecoder doc](docs/ADSBDecoder_0.0.9.pdf)

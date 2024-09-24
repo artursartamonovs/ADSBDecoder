@@ -113,7 +113,7 @@ class AirPlaneTracker {
     }
     
     func printAllICAOnames() {
-        let extra = true
+        let extra = false
         var once=false
         for (address,plane) in airplanes {
             if plane.ICAOready {

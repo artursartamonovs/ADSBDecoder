@@ -7,4 +7,4 @@
 
 import Foundation
 
-var decoder_debug_mode = true
+var decoder_debug_mode = false
